@@ -1,0 +1,161 @@
+/* ==== Giỏ hàng ==== */
+.cart-container {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #1b263b; /* Nền xanh đậm */
+    padding: 30px; /* Tăng padding */
+    border-radius: 10px;
+    color: white; /* Chữ mặc định là trắng */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Thêm bóng */
+}
+
+/* --- BẢNG GIỎ HÀNG --- */
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0d1b2a; /* Nền tối hơn cho bảng */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+table.table th, table.table td {
+    padding: 15px 12px; /* Tăng padding cho ô */
+    text-align: center;
+    border-bottom: 1px solid #333; /* Đường kẻ tối */
+    color: #f8f9fa; /* Đảm bảo nội dung bảng là màu trắng sáng */
+}
+
+table.table th {
+    /* Đã sửa: Đảm bảo tiêu đề bảng có màu chữ nổi bật */
+    background-color: #0E5AA7; /* Màu xanh thương hiệu cho tiêu đề */
+    font-weight: 700;
+    color: white; /* Màu chữ trắng cho tiêu đề */
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 2px solid #54b3d6; /* Đường kẻ phân cách */
+}
+
+/* Loại bỏ đường kẻ dưới cùng cho dòng cuối cùng */
+table.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* --- INPUT & BUTTONS --- */
+.quantity-input {
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #54b3d6; /* Viền màu xanh nổi bật */
+    padding: 5px;
+    background-color: #213045; /* Nền tối cho input */
+    color: white; /* Chữ trắng trong input */
+}
+/* Hiệu ứng focus */
+.quantity-input:focus {
+    border-color: #ec0b0b;
+    box-shadow: 0 0 0 0.2rem rgba(236, 11, 11, 0.25);
+    outline: none;
+}
+
+.remove-btn {
+    /* Đổi tên class để tránh trùng lặp với Bootstrap */
+    background: #ec0b0b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.remove-btn:hover {
+    background: #bf0000;
+}
+
+/* --- TỔNG TIỀN & THANH TOÁN --- */
+.cart-summary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.cart-summary span {
+    color: #ec0b0b; /* Làm nổi bật số tiền */
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.checkout-section {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.checkout-btn,
+.cart-summary a.btn {
+    background: #ec0b0b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    text-decoration: none; /* đảm bảo nó là link */
+}
+
+.checkout-btn:hover,
+.cart-summary a.btn:hover {
+    background: #bf0000;
+    transform: scale(1.02);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .cart-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    table.table thead {
+        display: none;
+    }
+    table.table, table.table tbody, table.table tr, table.table td {
+        display: block;
+        width: 100%;
+    }
+    table.table tr {
+        margin-bottom: 15px;
+        border: 1px solid #333;
+        border-radius: 8px;
+    }
+    table.table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px solid #213045; /* Đường kẻ tối hơn trong mobile */
+    }
+    table.table td:last-child {
+        border-bottom: none;
+    }
+    table.table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: calc(50% - 30px);
+        font-weight: bold;
+        text-align: left;
+        color: #54b3d6;
+    }
+    .cart-summary {
+        justify-content: center;
+    }
+    .checkout-section {
+        text-align: center;
+    }
+}

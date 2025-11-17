@@ -1,0 +1,212 @@
+/* ================================================================= */
+/* === SẢN PHẨM DROP DOWN MENU (ĐÃ ĐỒNG BỘ VỚI TÊN LỚP: dropdown-menu-custom) === */
+
+.dropdown-menu-custom {
+    position: relative;
+    /* Đảm bảo mục dropdown cũng tuân theo flex alignment */
+    align-self: center; 
+    display: inline-block;
+}
+
+.dropdown-menu-custom .parent {
+    /* Đảm bảo link cha có style giống các link nav khác */
+    padding: 15px 15px; /* Đã thống nhất padding */
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown-menu-custom .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 180px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    border-radius: 6px;
+    z-index: 999;
+    
+    /* === CĂN CHỈNH VỊ TRÍ NẰM CHÍNH GIỮA (ĐÚNG) === */
+    top: 100%; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+.dropdown-menu-custom .dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-menu-custom .dropdown-content a:hover {
+    background: #f3f3f3;
+}
+
+/* Hiện menu khi hover */
+.dropdown-menu-custom:hover .dropdown-content {
+    display: block;
+}
+
+/* ================================================================= */
+/* === HERO SECTION CHO TRANG SẢN PHẨM (HERO-CAR) === */
+
+.hero-car {
+    position: relative;
+    text-align: left;
+    padding: 100px;
+    background: url("/static/bg.jpg") no-repeat center/cover;
+}
+
+.hero-car h1 {
+    font-size: 48px;
+    color: #ec0b0b;
+    font-weight: bold;
+}
+
+.hero-car p {
+    max-width: 400px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.hero-car .btn {
+    background: #ec0b0b;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero-car .car-introduction {
+    background: #0f0d0d;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.hero-car .btn:hover {
+    opacity: 1;
+}
+
+
+/* Video */
+
+.car-video {
+    position: absolute;
+    right: 0;
+    max-width: 700px;
+    margin-top: -16%;
+    margin-right: 30px;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* ================================================================= */
+/* === TÌM KIẾM VÀ AUTOCOMPLETE === */
+
+.search-form {
+    position: relative; 
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 150px; 
+    outline: none; 
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Định kiểu cho hộp gợi ý tự động (Autocomplete Dropdown) */
+.autocomplete-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000; 
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.autocomplete-item {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.autocomplete-item:hover {
+    background-color: #f0f0f0;
+}
+
+
+/* ================================================================= */
+/* === RESPONSIVE ADJUSTMENTS === */
+
+@media (max-width: 992px) {
+    /* Điều chỉnh cho tablet landscape */
+    .car-video {
+        width: 45%; /* Giảm nhẹ kích thước video */
+        margin-top: -10%; /* Điều chỉnh lại vị trí */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-car {
+        padding: 50px;
+    }
+    .hero-car h1 {
+        font-size: 36px;
+    }
+    .hero-car p {
+        font-size: 16px;
+    }
+    .car-video {
+        position: static;
+        /* Video xuống dưới trên mobile */
+        max-width: 100%;
+        margin-top: 20px;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-car {
+        padding: 30px;
+    }
+    .hero-car h1 {
+        font-size: 28px;
+    }
+}

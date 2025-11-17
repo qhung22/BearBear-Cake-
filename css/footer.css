@@ -1,0 +1,27 @@
+/* CSS cho phần footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin: 10px 0;
+}
+
+.contact-info {
+    margin: 10px 0;
+}

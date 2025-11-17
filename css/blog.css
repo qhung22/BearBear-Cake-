@@ -1,0 +1,192 @@
+
+/* Dropdown Navigation */
+.dropdown-content a:hover {
+    background-color: #FF9AA2; /* Màu Hồng nhạt khi hover */
+    color: white;
+    transform: none;
+}
+
+
+/* === Blog Content Styles (Đã cập nhật màu sắc) === */
+.blog-container {
+    max-width: 900px;
+    margin: 120px auto 50px auto;
+    padding: 0 20px;
+    color: #333;
+    flex: 1;
+}
+
+.blog-container h1 {
+    font-size: 38px;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.blog-container h2 {
+    font-size: 28px;
+    color: #54b3d6;
+    margin: 30px 0 15px;
+    font-weight: 600;
+}
+
+.blog-container strong {
+    color: #FF4D7A;
+    font-weight: 700;
+}
+/* ... (Giữ nguyên các style khác của blog-container) ... */
+
+
+/* === Product Card Styles === */
+
+.product-card { 
+    background-color: #FDFDFD;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card p {
+    color: #FF4D7A;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.product-card .buy-button,
+.dat-ngay {
+    background-color: #FF4D7A; /* Nút mua màu Hồng đậm */
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.product-card .buy-button:hover,
+.dat-ngay:hover {
+    background-color: #e71708;
+}
+
+.product-page-title {
+    color: #FF4D7A;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 40px;
+}
+
+
+/* === Cart Modal Styles (Giỏ Hàng) === */
+
+/* Giả định HTML sử dụng cấu trúc cho Modal (như ảnh image_b0162a.png) */
+.cart-modal-content {
+    background-color: #fff; /* Nền sáng */
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.cart-modal-header {
+    background-color: #F8F8F8; /* Nền kem/xám nhạt */
+    color: #333;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.cart-table th {
+    background-color: #54b3d6; /* Màu Xanh dịu cho tiêu đề bảng */
+    color: white;
+    font-weight: 600;
+}
+
+.cart-table .product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-total {
+    text-align: right;
+    padding: 20px;
+    background-color: #FDFDFD;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cart-total strong {
+    color: #FF4D7A; /* Màu Hồng đậm cho Tổng tiền */
+    font-weight: 700;
+}
+
+.checkout-button {
+    background-color: #FF4D7A; /* Nút Thanh Toán màu Hồng đậm */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #e71708;
+}
+
+.remove-button {
+    background-color: #FF9AA2; /* Nút Xóa màu Hồng nhạt */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+    background-color: #FF4D7A;
+}
+
+
+/* === Footer Styles === */
+
+.footer {
+    background-color: #EFEFEF;
+    color: #333;
+    padding: 40px 50px;
+    text-align: center;
+    width: 100%;
+}
+/* ... (Giữ nguyên các style khác của Footer) ... */
+
+
+/* === Modal Styles (Login/Register) === */
+.modal-header.card-header {
+    background-color: #FF4D7A;
+    color: white;
+}
+/* ... (Giữ nguyên các style khác của Modal) ... */

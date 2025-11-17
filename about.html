@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEARBEAR CAKE - GIỚI THIỆU</title> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/about.css"> 
+    <link rel="stylesheet" href="/css/footer.css">
+    
+    <script src="/js/script.js" defer></script>
+    <script src="/js/cart.js" defer></script> 
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo-link">
+            <img src="static/hinhanh/logo/logo3.png" alt="Logo BEARBEAR CAKE" class="logo">
+        </a>
+        <nav class="nav">
+            <a href="index.html" data-replace="TRANG CHỦ"><span>TRANG CHỦ</span></a>
+            <a href="about.html" data-replace="GIỚI THIỆU"><span>GIỚI THIỆU</span></a>
+
+            <div class="dropdown-menu-item">
+                <a href="cars.html" data-replace="SẢN PHẨM"><span>SẢN PHẨM</span></a>
+
+                <div class="dropdown-content">
+                    <a href="#all-products">Tất cả sản phẩm</a>
+                    <a href="#banh-ngot">Bánh ngọt</a>
+                    <a href="#sua-tra">Bánh mặn</a> 
+                </div>
+            </div>
+
+            <a href="blog.html" data-replace="BLOG"><span>BLOG</span></a>
+            <a href="contact.html" data-replace="HỖ TRỢ"><span>HỖ TRỢ</span></a>
+            <li class="search-item">
+                <form action="/products" method="get" class="search-form">
+                    <input type="text" name="q" id="search-input" placeholder="Tìm kiếm..." class="search-input" autocomplete="off">
+                    <button type="submit" class="search-button">🔍</button>
+                    <div id="autocomplete-results" class="autocomplete-dropdown">
+                        </div>
+                </form>
+            </li>
+        </ul>
+        </nav>
+
+        <a href="cart.html" class="cart-icon-link">
+            <div class="cart-icon-wrapper">
+                <i class="fas fa-shopping-cart cart-icon" id="cartToggle"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </a>
+    </header>
+    
+    <section class="page-intro-section">
+        <h1>Giới Thiệu BearBear Cake</h1>
+        <p class="intro-heading">NGỌT NGÀO, DỄ THƯƠNG & GIÀU CẢM XÚC</p>
+    </section>
+
+    <section class="content-block first-block">
+        <h2 class="block-title">1. Giới thiệu về cửa hàng</h2>
+        <p class="main-text">
+            BearBear Cake là thương hiệu bánh ngọt dành cho giới trẻ, đặc biệt là **Gen Z**, được xây dựng với hình ảnh **thân thiện, trẻ trung và dễ thương**. Lấy cảm hứng từ chú gấu BearBear – một người bạn tượng trưng cho sự ấm áp và hạnh phúc – cửa hàng mang đến những chiếc bánh mềm xốp, thơm ngọt và giàu cảm xúc. BearBear Cake không chỉ bán bánh, mà còn mang đến một **không gian trải nghiệm dễ thương**, nơi khách hàng có thể tìm thấy niềm vui nhỏ bé và cảm giác “được yêu chiều” qua từng miếng bánh.
+        </p>
+    </section>
+
+    <section class="story-block content-block image-right">
+        <div class="story-text">
+            <h2 class="block-title">2. Câu chuyện thương hiệu</h2>
+            <p class="main-text">
+                BearBear Cake được tạo nên từ mong muốn đem lại **sự ấm áp và ngọt ngào** cho cuộc sống bận rộn ngày nay. Ý tưởng bắt đầu từ hình ảnh một chú gấu nhỏ—thân thiện, gần gũi, luôn khiến mọi người cảm thấy dễ chịu. Từ đó, thương hiệu chọn chiếc bánh làm phương tiện để **truyền tải cảm xúc tích cực** và lan tỏa năng lượng vui vẻ.
+            </p>
+            <p class="main-text">
+                BearBear Cake tin rằng: mỗi chiếc bánh đều có một câu chuyện, một khoảnh khắc hạnh phúc, một lời nhắn gửi yêu thương. Vì vậy, từng sản phẩm được chăm chút từ hương vị đến hình thức, để khi khách hàng mở hộp bánh ra, họ cảm nhận được sự **dễ thương và chân thành** mà thương hiệu muốn gửi gắm.
+            </p>
+        </div>
+        <div class="story-image-container">
+            <img src="static/hinhanh/hinhgau/gau1.png" alt="Logo BearBear Cake - Biểu tượng của sự ấm áp">
+        </div>
+    </section>
+
+    <section class="vm-section content-block">
+        <h2 class="block-title">3. Tầm nhìn & Sứ mệnh</h2>
+
+        <div class="vm-container">
+            <div class="vm-item vision">
+                <h3>Tầm nhìn</h3>
+                <p>Trở thành một trong những thương hiệu bánh ngọt được yêu thích nhất bởi **giới trẻ Việt Nam**, mang lại trải nghiệm ngọt ngào, sáng tạo và mang đậm dấu ấn cảm xúc. BearBear Cake hướng tới xây dựng hệ thống cửa hàng, sản phẩm và hình ảnh nhất quán, tạo nên một biểu tượng **“ngọt – dễ thương – đáng tin”**.</p>
+            </div>
+            <div class="vm-item mission">
+                <h3>Sứ mệnh</h3>
+                <ul>
+                    <li>Tạo ra những sản phẩm bánh chất lượng cao, thơm ngon và an toàn cho sức khỏe.</li>
+                    <li>Mang đến trải nghiệm thương hiệu vui tươi, dễ thương và gần gũi để mỗi khách hàng đều cảm thấy hạnh phúc khi đến BearBear Cake.</li>
+                    <li>Không ngừng sáng tạo hương vị, bao bì và phong cách mới để phù hợp với xu hướng của giới trẻ.</li>
+                    <li>Lan tỏa năng lượng tích cực thông qua từng chiếc bánh, từng hình ảnh và từng câu chuyện thương hiệu.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="core-values-section content-block">
+        <h2 class="block-title">4. Giá trị cốt lõi</h2>
+        <p class="main-text">
+            Giá trị cốt lõi của BearBear Cake được xây dựng dựa trên sự kết hợp giữa **chất lượng, sáng tạo, niềm vui, tính gần gũi – dễ thương và uy tín**. Thương hiệu cam kết mang đến những sản phẩm bánh ngọt thơm ngon và an toàn, luôn đổi mới trong hương vị và thiết kế để phù hợp với thị hiếu của giới trẻ. Mỗi chiếc bánh không chỉ là món ăn mà còn là **trải nghiệm vui tươi, dễ thương, tạo cảm giác được quan tâm và yêu chiều**. Đồng thời, BearBear Cake luôn duy trì sự minh bạch, đáng tin cậy và tận tâm trong từng chi tiết để xây dựng niềm tin lâu dài với khách hàng.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="mailto:bearbearcake2604@gmail.com" target="_blank">GMAIL</a> |
+            <a href="tel:0334461541" target="_blank">ZALO</a> 
+        </div>
+
+        <div class="contact-info">
+            <p>Số điện thoại: 0334461541</p>
+            <p>357/22, đường Nguyễn Thị Minh Khai, phường Tân Đông Hiệp, Thành phố Hồ Chí Minh </p>
+        </div>
+
+        <p>© 2025 BEARBEAR CAKE. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
